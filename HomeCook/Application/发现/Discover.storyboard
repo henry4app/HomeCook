@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="hRU-bD-B8N">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Discover-->
+        <scene sceneID="sca-uT-NOh">
+            <objects>
+                <tableViewController id="1b4-Cf-beD" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="YtJ-xt-s82">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Kcd-H0-2Zf">
+                                <rect key="frame" x="0.0" y="92" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Kcd-H0-2Zf" id="DS5-UV-7Rs">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="1b4-Cf-beD" id="nW7-Hc-oA3"/>
+                            <outlet property="delegate" destination="1b4-Cf-beD" id="9dA-fd-ZhJ"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Discover" id="r5e-Bn-oau"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XSn-gi-ReQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="470.39999999999998" y="413.69333333333333"/>
+        </scene>
+        <!--发现-->
+        <scene sceneID="v4A-Q1-kv4">
+            <objects>
+                <navigationController id="hRU-bD-B8N" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="发现" image="discover_unsel" selectedImage="discover_sel" id="xdX-z1-fYM"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dz0-HY-xNV">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="1b4-Cf-beD" kind="relationship" relationship="rootViewController" id="5sT-au-ege"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cm1-Sk-QwE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="33.066666666666663" y="413.69333333333333"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="discover_sel" width="27" height="27"/>
+        <image name="discover_unsel" width="27" height="27"/>
+    </resources>
+</document>

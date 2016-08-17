@@ -1,0 +1,14 @@
+//
+//  RequestPath.pch
+//  HomeCook
+//
+//  Created by tarena on 16/8/16.
+//  Copyright © 2016年 tarena. All rights reserved.
+//
+
+#ifndef RequestPath_pch
+#define RequestPath_pch
+
+#define kAdPath @"http://user.mapi.jiashuangkuaizi.com/UFocus/list"
+
+#endif /* RequestPath_pch */
