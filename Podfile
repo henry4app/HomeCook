@@ -15,5 +15,6 @@ pod 'UITableView+FDTemplateLayoutCell'
 pod 'MBProgressHUD'
 pod 'BlocksKit'
 pod 'pop'
+pod 'iCarousel'
 
 end

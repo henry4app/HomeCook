@@ -9,6 +9,7 @@
 #import "BaseViewModel.h"
 #import "HCAdModel.h"
 #import "HCNetManager.h"
+#import "HCActivityModel.h"
 
 @interface HCAdViewModel : BaseViewModel
 
@@ -17,5 +18,11 @@
 - (NSURL *)jumpURL:(NSInteger)index;
 
 @property (nonatomic) NSArray<HCAdDataListModel *> *dataList;
+
+- (NSURL *)activityImgURL:(NSInteger)index;
+- (NSURL *)activityJumpURL:(NSInteger)index;
+- (NSString *)activityTitle:(NSInteger)index;
+
+@property (nonatomic) NSArray<HCActivityDataListModel *> *activityDataList;
 
 @end

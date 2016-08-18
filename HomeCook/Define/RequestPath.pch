@@ -9,6 +9,10 @@
 #ifndef RequestPath_pch
 #define RequestPath_pch
 
+// 主页广告
 #define kAdPath @"http://user.mapi.jiashuangkuaizi.com/UFocus/list"
+
+// 主页活动
+#define kActivityPath @"http://user.gw.jiashuangkuaizi.com/api/op/list"
 
 #endif /* RequestPath_pch */

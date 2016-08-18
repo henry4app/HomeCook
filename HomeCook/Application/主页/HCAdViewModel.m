@@ -24,12 +24,39 @@
 
 - (void)getDataWithMode:(RequestMode)requestMode completionHandler:(void (^)(NSError *))completionHandler {
     
-    self.dataTask = [HCNetManager getAdModelCompletionHandler:^(HCAdModel *model, NSError *error) {
+    __block int total = 2;
+    
+    [HCNetManager getAdModelCompletionHandler:^(HCAdModel *model, NSError *error) {
+        total--;
         self.dataList = model.data.list;
-        !completionHandler ? : completionHandler(error);
+        if (total == 0) {
+            !completionHandler ? : completionHandler(error);
+        }
+        
+        
+    }];
+    
+    [HCNetManager getActivityModelCompletionHandler:^(HCActivityModel *model, NSError *error) {
+        total--;
+        self.activityDataList = model.data.list;
+        if (total == 0) {
+            !completionHandler ? : completionHandler(error);
+        }
     }];
     
     
+}
+
+- (NSURL *)activityImgURL:(NSInteger)index {
+    return self.activityDataList[index].imageUrl.hc_URL;
+}
+
+- (NSURL *)activityJumpURL:(NSInteger)index {
+    return self.activityDataList[index].jumpUrl.hc_URL;
+}
+
+- (NSString *)activityTitle:(NSInteger)index {
+    return self.activityDataList[index].title;
 }
 
 @end

@@ -16,6 +16,8 @@
 		856E295F1D6458BE007C4E70 /* HCHomePageHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 856E295E1D6458BE007C4E70 /* HCHomePageHeaderView.m */; };
 		856E29631D6467C5007C4E70 /* BaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 856E29621D6467C5007C4E70 /* BaseViewModel.m */; };
 		856E29661D6467EB007C4E70 /* HCAdViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 856E29651D6467EB007C4E70 /* HCAdViewModel.m */; };
+		857AE0981D65764A002DCC1E /* HCRefreshGifHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 857AE0971D65764A002DCC1E /* HCRefreshGifHeader.m */; };
+		857AE09E1D6597CC002DCC1E /* HCActivityModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 857AE09D1D6597CC002DCC1E /* HCActivityModel.m */; };
 		85956F901D62EA1600B2EDD1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 85956F8F1D62EA1600B2EDD1 /* main.m */; };
 		85956F931D62EA1600B2EDD1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 85956F921D62EA1600B2EDD1 /* AppDelegate.m */; };
 		85956F961D62EA1600B2EDD1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85956F951D62EA1600B2EDD1 /* ViewController.m */; };
@@ -53,6 +55,10 @@
 		856E29621D6467C5007C4E70 /* BaseViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewModel.m; sourceTree = "<group>"; };
 		856E29641D6467EB007C4E70 /* HCAdViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCAdViewModel.h; sourceTree = "<group>"; };
 		856E29651D6467EB007C4E70 /* HCAdViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCAdViewModel.m; sourceTree = "<group>"; };
+		857AE0961D65764A002DCC1E /* HCRefreshGifHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCRefreshGifHeader.h; sourceTree = "<group>"; };
+		857AE0971D65764A002DCC1E /* HCRefreshGifHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCRefreshGifHeader.m; sourceTree = "<group>"; };
+		857AE09C1D6597CC002DCC1E /* HCActivityModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCActivityModel.h; sourceTree = "<group>"; };
+		857AE09D1D6597CC002DCC1E /* HCActivityModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCActivityModel.m; sourceTree = "<group>"; };
 		85956F8B1D62EA1600B2EDD1 /* HomeCook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeCook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85956F8F1D62EA1600B2EDD1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		85956F911D62EA1600B2EDD1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../AppDelegate.h; sourceTree = "<group>"; };
@@ -247,6 +253,8 @@
 				85956FDA1D6301C700B2EDD1 /* UIView+HUD.m */,
 				85956FEF1D63108300B2EDD1 /* UIScrollView+Refresh.h */,
 				85956FF01D63108300B2EDD1 /* UIScrollView+Refresh.m */,
+				857AE0961D65764A002DCC1E /* HCRefreshGifHeader.h */,
+				857AE0971D65764A002DCC1E /* HCRefreshGifHeader.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -301,6 +309,8 @@
 				85956FE31D6307E800B2EDD1 /* HCAdModel.m */,
 				85956FDF1D6307B300B2EDD1 /* HCHomePageModel.h */,
 				85956FE01D6307B300B2EDD1 /* HCHomePageModel.m */,
+				857AE09C1D6597CC002DCC1E /* HCActivityModel.h */,
+				857AE09D1D6597CC002DCC1E /* HCActivityModel.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -440,8 +450,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				857AE0981D65764A002DCC1E /* HCRefreshGifHeader.m in Sources */,
 				85956FD81D63014200B2EDD1 /* NSString+URL.m in Sources */,
 				85956F961D62EA1600B2EDD1 /* ViewController.m in Sources */,
+				857AE09E1D6597CC002DCC1E /* HCActivityModel.m in Sources */,
 				856E29541D643B26007C4E70 /* HCMyTabBarController.m in Sources */,
 				85956F931D62EA1600B2EDD1 /* AppDelegate.m in Sources */,
 				85956FBA1D62F8FC00B2EDD1 /* AppDelegate+HC.m in Sources */,

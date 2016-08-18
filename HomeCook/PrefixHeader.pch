@@ -24,6 +24,7 @@
 #import <BlocksKit.h>
 #import <BlocksKit+UIKit.h>
 #import <POP.h>
+#import <iCarousel.h>
 
 #import "AppDelegate+HC.h"
 #import "RequestPath.pch"

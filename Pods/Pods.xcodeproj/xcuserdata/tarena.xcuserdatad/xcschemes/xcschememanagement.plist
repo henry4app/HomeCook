@@ -44,6 +44,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>iCarousel.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>pop.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -52,7 +57,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>11F28EA6E0F81596A5E73EDB6B8004BE</key>
+		<key>4450CC018EE6F7B7239D9F71D4E1D72E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -62,7 +67,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6E2B254F638493AEB535C9DEA578333A</key>
+		<key>6CD859D7A4090A2AE013B41D96B568C4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -72,12 +77,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7CA1A056898AEA41B9DF4590E3F9E114</key>
+		<key>928353533005A4198EBDA5B700D37B64</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>928353533005A4198EBDA5B700D37B64</key>
+		<key>9494390523250106847516AB47E5F9FF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9B878911C0A714501CA2C7230F6BF6D8</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -92,7 +102,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>FC9656EFE198D0E29DB74A91436EF38A</key>
+		<key>E19C4C433ECE545C0EAF5E16BF66CC8A</key>
 		<dict>
 			<key>primary</key>
 			<true/>

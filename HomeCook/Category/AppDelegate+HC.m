@@ -12,9 +12,13 @@
 @implementation AppDelegate (HC)
 
 - (void)configSystem:(NSDictionary *)options {
+    
+    
+    
     [AFNetworkActivityIndicatorManager sharedManager].enabled = YES;
     [[AFNetworkReachabilityManager sharedManager] setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
         NSLog(@"%@", AFStringFromNetworkReachabilityStatus(status));
+        
     }];
     [[AFNetworkReachabilityManager sharedManager] startMonitoring];
 }

@@ -18,6 +18,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
+
     [self configSystem:launchOptions];
     [HCNetManager getAdModelCompletionHandler:^(HCAdModel *model, NSError *error) {
         NSLog(@"");
