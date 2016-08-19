@@ -18,9 +18,12 @@
 		856E29661D6467EB007C4E70 /* HCAdViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 856E29651D6467EB007C4E70 /* HCAdViewModel.m */; };
 		857AE0981D65764A002DCC1E /* HCRefreshGifHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 857AE0971D65764A002DCC1E /* HCRefreshGifHeader.m */; };
 		857AE09E1D6597CC002DCC1E /* HCActivityModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 857AE09D1D6597CC002DCC1E /* HCActivityModel.m */; };
+		8589AFB21D66B31A0048EB37 /* HCPopADViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8589AFB11D66B31A0048EB37 /* HCPopADViewController.m */; };
+		8589AFB51D66B3680048EB37 /* HCAdPresentingAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8589AFB41D66B3680048EB37 /* HCAdPresentingAnimator.m */; };
+		8589AFB81D66B37E0048EB37 /* HCAdDismissingAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8589AFB71D66B37E0048EB37 /* HCAdDismissingAnimator.m */; };
+		8589AFBA1D66E7AB0048EB37 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8589AFB91D66E7AB0048EB37 /* MapKit.framework */; };
 		85956F901D62EA1600B2EDD1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 85956F8F1D62EA1600B2EDD1 /* main.m */; };
 		85956F931D62EA1600B2EDD1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 85956F921D62EA1600B2EDD1 /* AppDelegate.m */; };
-		85956F961D62EA1600B2EDD1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85956F951D62EA1600B2EDD1 /* ViewController.m */; };
 		85956F991D62EA1700B2EDD1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85956F971D62EA1700B2EDD1 /* Main.storyboard */; };
 		85956F9B1D62EA1700B2EDD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85956F9A1D62EA1700B2EDD1 /* Assets.xcassets */; };
 		85956FB51D62EF7400B2EDD1 /* HCDiscoverModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 85956FB41D62EF7400B2EDD1 /* HCDiscoverModel.m */; };
@@ -59,12 +62,17 @@
 		857AE0971D65764A002DCC1E /* HCRefreshGifHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCRefreshGifHeader.m; sourceTree = "<group>"; };
 		857AE09C1D6597CC002DCC1E /* HCActivityModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCActivityModel.h; sourceTree = "<group>"; };
 		857AE09D1D6597CC002DCC1E /* HCActivityModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCActivityModel.m; sourceTree = "<group>"; };
+		8589AFB01D66B31A0048EB37 /* HCPopADViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCPopADViewController.h; sourceTree = "<group>"; };
+		8589AFB11D66B31A0048EB37 /* HCPopADViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCPopADViewController.m; sourceTree = "<group>"; };
+		8589AFB31D66B3680048EB37 /* HCAdPresentingAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCAdPresentingAnimator.h; sourceTree = "<group>"; };
+		8589AFB41D66B3680048EB37 /* HCAdPresentingAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCAdPresentingAnimator.m; sourceTree = "<group>"; };
+		8589AFB61D66B37E0048EB37 /* HCAdDismissingAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCAdDismissingAnimator.h; sourceTree = "<group>"; };
+		8589AFB71D66B37E0048EB37 /* HCAdDismissingAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCAdDismissingAnimator.m; sourceTree = "<group>"; };
+		8589AFB91D66E7AB0048EB37 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		85956F8B1D62EA1600B2EDD1 /* HomeCook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeCook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85956F8F1D62EA1600B2EDD1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		85956F911D62EA1600B2EDD1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../AppDelegate.h; sourceTree = "<group>"; };
 		85956F921D62EA1600B2EDD1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ../AppDelegate.m; sourceTree = "<group>"; };
-		85956F941D62EA1600B2EDD1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		85956F951D62EA1600B2EDD1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		85956F981D62EA1700B2EDD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		85956F9A1D62EA1700B2EDD1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
 		85956F9F1D62EA1700B2EDD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -103,6 +111,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8589AFBA1D66E7AB0048EB37 /* MapKit.framework in Frameworks */,
 				DA23AF17AC523B29863E3739 /* libPods-HomeCook.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -133,6 +142,8 @@
 			children = (
 				856E295A1D64583D007C4E70 /* HCHomePageViewController.h */,
 				856E295B1D64583D007C4E70 /* HCHomePageViewController.m */,
+				8589AFB01D66B31A0048EB37 /* HCPopADViewController.h */,
+				8589AFB11D66B31A0048EB37 /* HCPopADViewController.m */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -144,6 +155,33 @@
 				856E29651D6467EB007C4E70 /* HCAdViewModel.m */,
 			);
 			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		8589AFAD1D66B23F0048EB37 /* Animator */ = {
+			isa = PBXGroup;
+			children = (
+				8589AFAF1D66B2BF0048EB37 /* DismissingAnimator */,
+				8589AFAE1D66B2AB0048EB37 /* PresentingAnimator */,
+			);
+			name = Animator;
+			sourceTree = "<group>";
+		};
+		8589AFAE1D66B2AB0048EB37 /* PresentingAnimator */ = {
+			isa = PBXGroup;
+			children = (
+				8589AFB31D66B3680048EB37 /* HCAdPresentingAnimator.h */,
+				8589AFB41D66B3680048EB37 /* HCAdPresentingAnimator.m */,
+			);
+			name = PresentingAnimator;
+			sourceTree = "<group>";
+		};
+		8589AFAF1D66B2BF0048EB37 /* DismissingAnimator */ = {
+			isa = PBXGroup;
+			children = (
+				8589AFB61D66B37E0048EB37 /* HCAdDismissingAnimator.h */,
+				8589AFB71D66B37E0048EB37 /* HCAdDismissingAnimator.m */,
+			);
+			name = DismissingAnimator;
 			sourceTree = "<group>";
 		};
 		85956F821D62EA1500B2EDD1 = {
@@ -167,8 +205,6 @@
 		85956F8D1D62EA1600B2EDD1 /* HomeCook */ = {
 			isa = PBXGroup;
 			children = (
-				85956F941D62EA1600B2EDD1 /* ViewController.h */,
-				85956F951D62EA1600B2EDD1 /* ViewController.m */,
 				85956FA51D62EBD700B2EDD1 /* Application */,
 				85956FA91D62EBD700B2EDD1 /* Category */,
 				85956FAA1D62EBD700B2EDD1 /* Define */,
@@ -211,6 +247,7 @@
 		85956FA61D62EBD700B2EDD1 /* 主页 */ = {
 			isa = PBXGroup;
 			children = (
+				8589AFAD1D66B23F0048EB37 /* Animator */,
 				856E29601D646773007C4E70 /* ViewModel */,
 				856E29591D64580A007C4E70 /* ViewController */,
 				856E29581D6457FF007C4E70 /* View */,
@@ -318,6 +355,7 @@
 		CADF1CD02ABA66D30A0CFAF9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8589AFB91D66E7AB0048EB37 /* MapKit.framework */,
 				7F36E6F4DA645D990B338B21 /* libPods-HomeCook.a */,
 			);
 			name = Frameworks;
@@ -452,8 +490,8 @@
 			files = (
 				857AE0981D65764A002DCC1E /* HCRefreshGifHeader.m in Sources */,
 				85956FD81D63014200B2EDD1 /* NSString+URL.m in Sources */,
-				85956F961D62EA1600B2EDD1 /* ViewController.m in Sources */,
 				857AE09E1D6597CC002DCC1E /* HCActivityModel.m in Sources */,
+				8589AFB81D66B37E0048EB37 /* HCAdDismissingAnimator.m in Sources */,
 				856E29541D643B26007C4E70 /* HCMyTabBarController.m in Sources */,
 				85956F931D62EA1600B2EDD1 /* AppDelegate.m in Sources */,
 				85956FBA1D62F8FC00B2EDD1 /* AppDelegate+HC.m in Sources */,
@@ -462,9 +500,11 @@
 				85956FDB1D6301C700B2EDD1 /* UIView+HUD.m in Sources */,
 				85956FF11D63108300B2EDD1 /* UIScrollView+Refresh.m in Sources */,
 				85956FD51D63005A00B2EDD1 /* NSObject+Parse.m in Sources */,
+				8589AFB21D66B31A0048EB37 /* HCPopADViewController.m in Sources */,
 				85956FE81D630A3F00B2EDD1 /* HCBaseNetworking.m in Sources */,
 				85956F901D62EA1600B2EDD1 /* main.m in Sources */,
 				85956FE11D6307B300B2EDD1 /* HCHomePageModel.m in Sources */,
+				8589AFB51D66B3680048EB37 /* HCAdPresentingAnimator.m in Sources */,
 				856E29631D6467C5007C4E70 /* BaseViewModel.m in Sources */,
 				85956FEE1D630D1C00B2EDD1 /* HCNetManager.m in Sources */,
 				85956FB51D62EF7400B2EDD1 /* HCDiscoverModel.m in Sources */,

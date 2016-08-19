@@ -9,8 +9,11 @@
 #import "HCHomePageViewController.h"
 #import "HCHomePageHeaderView.h"
 #import "HCAdViewModel.h"
+#import "HCPopADViewController.h"
+#import "HCAdPresentingAnimator.h"
+#import "HCAdDismissingAnimator.h"
 
-@interface HCHomePageViewController ()<UITableViewDelegate, UITableViewDataSource, HCAdViewDataSource, HCAdViewDelegate>
+@interface HCHomePageViewController ()<UIViewControllerTransitioningDelegate, UITableViewDelegate, UITableViewDataSource, HCAdViewDataSource, HCAdViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (weak, nonatomic) IBOutlet HCHomePageHeaderView *headerView;
@@ -18,6 +21,16 @@
 @end
 
 @implementation HCHomePageViewController
+
+#pragma mark - UIViewControllerTransitioningDelegate
+- (id<UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source {
+    return [HCAdPresentingAnimator new];
+}
+
+- (id<UIViewControllerAnimatedTransitioning>)animationControllerForDismissedController:(UIViewController *)dismissed {
+    return [HCAdDismissingAnimator new];
+}
+
 #pragma mark - HCAdViewDataSource
 
 - (NSInteger)numberOfItemsInAdView:(HCHomePageHeaderView *)view {
@@ -42,7 +55,10 @@
     NSLog(@"%@", [self.adViewModel jumpURL:index]);
 }
 
-
+- (void)adView:(HCHomePageHeaderView *)view didSelectActivityIconAtIndex:(NSInteger)index {
+    NSLog(@"%@", [self.adViewModel activityTitle:index]);
+    NSLog(@"%@", [self.adViewModel activityJumpURL:index]);
+}
 
 
 #pragma mark - Lazy load
@@ -60,11 +76,11 @@
 #pragma mark - View lifecycle
 - (void)viewDidLoad {
     [super viewDidLoad];
-
     
-    [_headerView.activityImageViewList[0] bk_whenTapped:^{
-        NSLog(@"%@", [self.adViewModel activityJumpURL:0]);
-    }];
+    HCPopADViewController *PopADVC = [HCPopADViewController new];
+    PopADVC.transitioningDelegate = self;
+    PopADVC.modalPresentationStyle = UIModalPresentationCustom;
+    [self.navigationController presentViewController:PopADVC animated:YES completion:nil];
     
     _headerView.delegate = self;
     _headerView.dataSource = self;
@@ -86,6 +102,12 @@
     }];
     [self.tableView beginHeaderRefresh];
     
+    
+}
+
+#pragma mark - UITableViewDelegate
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
 }
 

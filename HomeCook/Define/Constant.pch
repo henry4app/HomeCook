@@ -9,10 +9,18 @@
 #ifndef Constant_pch
 #define Constant_pch
 
+/*******    屏幕的宽高   *********/
 #define kScreenW [UIScreen mainScreen].bounds.size.width
 #define kScreenH [UIScreen mainScreen].bounds.size.height
+/********   快速三原色定制颜色   *********/
 #define kRGB(r,g,b,a) [UIColor colorWithRed:r / 255.0 green:g / 255.0 blue:b / 255.0 alpha:a]
+/*******    App main color   *********/
 #define HCMainColor kRGB(236, 91, 51, 1)
 
+/*********** NSUserDefaults keys **************/
+/** 保存当前经度 */
+#define kCurrentLongitudeKey @"kCurrentLongitudeKey"
+/** 保存当前纬度 */
+#define kCurrentLatitudeKey @"kCurrentLatitudeKey"
 
 #endif /* Constant_pch */

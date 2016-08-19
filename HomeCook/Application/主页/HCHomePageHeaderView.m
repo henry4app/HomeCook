@@ -31,7 +31,20 @@
     [self pageControl];
     [self activityImageViewList];
     [self activityLabelList];
+    [self headerBtnList];
 
+}
+
+- (NSArray<UIButton *> *)headerBtnList {
+    if(_headerBtnList == nil) {
+        NSMutableArray *tmpArr = [NSMutableArray new];
+        for (int i = 20; i <= 25; i++) {
+            UIButton *button = [self viewWithTag:i];
+            [tmpArr addObject:button];
+            [button addTarget:self action:@selector(btnClicked:) forControlEvents:UIControlEventTouchUpInside];
+        }
+    }
+    return _headerBtnList;
 }
 
 - (NSArray<UIImageView *> *)activityImageViewList {
@@ -40,7 +53,6 @@
         for (int i = 1; i <= 6 ; i++) {
             UIImageView *imageView = [self viewWithTag:i];
             [tmpArr addObject:imageView];
-
         }
         _activityImageViewList = tmpArr.mutableCopy;
     }
@@ -87,10 +99,18 @@
 - (void)carousel:(iCarousel *)carousel didSelectItemAtIndex:(NSInteger)index {
     if ([_delegate respondsToSelector:@selector(carousel:didSelectItemAtIndex:)]) {
         [_delegate adView:self didSelectIconAtIndex:index];
+
     }
 }
 
 
+- (void)btnClicked:(UIButton *)button {
+    //NSLog(@"%ld", button.tag);
+    NSInteger index = button.tag - 20;
+    if ([_delegate respondsToSelector:@selector(adView:didSelectActivityIconAtIndex:)]) {
+        [_delegate adView:self didSelectActivityIconAtIndex:index];
+    }
+}
 
 
 - (CGFloat)carousel:(iCarousel *)carousel valueForOption:(iCarouselOption)option withDefault:(CGFloat)value {
@@ -136,36 +156,8 @@
     }
 }
 
-//add tap gesture recogniser
-//UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(didTap:)];
-//tapGesture.delegate = (id <UIGestureRecognizerDelegate>)self;
-//[_contentView addGestureRecognizer:tapGesture];
 
-//- (void)didTap:(UITapGestureRecognizer *)tapGesture
-//{
-//    //check for tapped view
-//    NSInteger index = [self indexOfItemView:[self itemViewAtPoint:[tapGesture locationInView:_contentView]]];
-//    if (index != NSNotFound)
-//    {
-//        if (!_delegate || [_delegate carousel:self shouldSelectItemAtIndex:index])
-//        {
-//            if ((index != self.currentItemIndex && _centerItemWhenSelected) ||
-//                (index == self.currentItemIndex && _scrollToItemBoundary))
-//            {
-//                [self scrollToItemAtIndex:index animated:YES];
-//            }
-//            [_delegate carousel:self didSelectItemAtIndex:index];
-//        }
-//        else if (_scrollEnabled && _scrollToItemBoundary && _autoscroll)
-//        {
-//            [self scrollToItemAtIndex:self.currentItemIndex animated:YES];
-//        }
-//    }
-//    else
-//    {
-//        [self scrollToItemAtIndex:self.currentItemIndex animated:YES];
-//    }
-//}
+
 
 
 
